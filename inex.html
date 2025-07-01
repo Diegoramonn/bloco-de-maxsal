@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>BLOCO DE PEDIDOS</title>
+</head>
+<body>
+
+
+     <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset  id="dados">
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">DATA:</label>
+                <input type="text" name="data" id="idata" minlength="5" maxlength="20" required placeholder="DATA DO PEDIDO">
+            </p>
+            <P>
+                <label for="inome">NOME DO CLIENTE:</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="100" required placeholder="NOME DO CLIENTE">
+
+            </P>
+            <p>
+                <label for="icpf">CPF OU  CNPJ DO CLIENTE :</label>
+                <input type="cpf" name="cpf" id="icpf" placeholder="CPF OU CNPJ" required>
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(DD)XXXX-XXXX" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+
+             <p>
+                <label for="inome">ENDEREÇO PARA ENTREGA</label>
+                <input type="text" name="endereço" id="iendereço" minlength="5" maxlength="100" required placeholder="ENDEREÇO PARA ENTREGA">
+            </p>
+
+             <p>
+                <label for="inome">VENDEDOR</label>
+                <input type="text" name="vendedor" id="ivendedor" minlength="5" maxlength="100" required placeholder="VENDEDOR">
+            </p>
+
+
+            <legend>FORMA DE PAGAMENTO </legend><br>
+            <input type="radio" name="pagamento" id="isxmas" value="A"> <label for="isxmas">AVISTA</label>
+            <input type="radio" name="pagamento" id="isxfem" value="B"> <label for="isxfem">BOLETO</label>
+            <input type="radio" name="pagamento" id="isxfem" value="P"> <label for="isxfem">PIX </label>
+            <input type="radio" name="pagamento" id="isxfem" value="C"> <label for="isxfem">TRASFERENCIA</label>
+            <input type="radio" name="pagamento" id="isxfem" value="T"> <label for="isxfem">CHEQUE</label>
+
+
+           
+        </fieldset>
+
+
+    </form>
+
+    <form id="meio">
+        <fieldset  >
+            <legend>PRODUTOS</legend>
+
+            <thead>
+                <tr>
+                
+                   <td class="numero">QUANT</td>
+                   <td class="numero">CODIGO</td>
+                   <td>PRODUTO</td>
+                   <td>PREÇO</td>
+                   <td class="num">TOTAL</td>
+                      
+                </tr>
+
+            </thead>
+
+        </fieldset>
+
+        
+        <p id="ev">
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+
+        </p>
+
+    </form>
+    
+    
+</body>
+</html>
