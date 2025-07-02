@@ -12,53 +12,63 @@
      <form action="cadastro.php" method="get" autocomplete="on">
         <fieldset  id="dados">
             <legend>Dados Pessoais</legend>
-            <p>
-                <label for="inome">DATA:</label>
-                <input type="text" name="data" id="idata" minlength="5" maxlength="20" required placeholder="DATA DO PEDIDO">
-            </p>
-            <P>
-                <label for="inome">NOME DO CLIENTE:</label>
-                <input type="text" name="nome" id="inome" minlength="5" maxlength="100" required placeholder="NOME DO CLIENTE">
+            <p id="a">
+                <label for="inome">CLIENTE</label>
+                <input type="text" name="cliente" id="icliente" minlength="5" maxlength="20" required placeholder="CLIENETE">
 
-            </P>
-            <p>
-                <label for="icpf">CPF OU  CNPJ DO CLIENTE :</label>
-                <input type="cpf" name="cpf" id="icpf" placeholder="CPF OU CNPJ" required>
+
+                
+                     <label for="inome">DATA</label>
+                    <input type="date" name="data" id="idata" minlength="5" maxlength="100" required placeholder="DATA">
+                
+
             </p>
-            <p>
-                <label for="itel">Telefone:</label>
+          
+            <p id="c">
+                <label for="icpf">CPF CNPJ</label>
+                <input type="text" name="cpf" id="icpf"   minlength="5" maxlength="100" placeholder="CPF OU CNPJ" required>
+
+                <label for="itel">TEL:</label>
                 <input type="tel" name="tel" id="itel" autocomplete="tel" placeholder="(DD)XXXX-XXXX" required pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
             </p>
 
              <p>
-                <label for="inome">ENDEREÇO PARA ENTREGA</label>
-                <input type="text" name="endereço" id="iendereço" minlength="5" maxlength="100" required placeholder="ENDEREÇO PARA ENTREGA">
+                <label for="inome">END</label>
+                <input type="text" name="endereço" id="iendereço" minlength="5" maxlength="100" required placeholder="ENDEREÇO">
+
+                 <label for="inome">CIDADE</label>
+                <input type="text" name="CIDADE" id="icidade" minlength="5" maxlength="100" required placeholder="CIDADE">
+
+               
             </p>
 
-             <p>
-                <label for="inome">VENDEDOR</label>
+            <P>
+                 <label for="inome">VENDEDOR</label>
                 <input type="text" name="vendedor" id="ivendedor" minlength="5" maxlength="100" required placeholder="VENDEDOR">
-            </p>
 
+            </P>
 
-            <legend>FORMA DE PAGAMENTO </legend><br>
+            
             <input type="radio" name="pagamento" id="isxmas" value="A"> <label for="isxmas">AVISTA</label>
             <input type="radio" name="pagamento" id="isxfem" value="B"> <label for="isxfem">BOLETO</label>
             <input type="radio" name="pagamento" id="isxfem" value="P"> <label for="isxfem">PIX </label>
-            <input type="radio" name="pagamento" id="isxfem" value="C"> <label for="isxfem">TRASFERENCIA</label>
             <input type="radio" name="pagamento" id="isxfem" value="T"> <label for="isxfem">CHEQUE</label>
+
+            <p>
+                <label for="inome">COMPLEMENTO</label>
+                <input type="text" name="complemento" id="icomplemento" minlength="5" maxlength="100" required placeholder="COMPLEMENTO">
+            </p>
 
 
            
         </fieldset>
 
+       
+
 
     </form>
 
-    <form id="meio">
-        <fieldset  >
-            <legend>PRODUTOS</legend>
-
+    <table>
             <thead>
                 <tr>
                 
@@ -70,18 +80,574 @@
                       
                 </tr>
 
+                <tr>
+                
+                   <td class="quant"><label  for="inome"></label> 
+                     <input class="quant"  type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+
+                   </td>
+                   <td class="numero">1014</td>
+                   <td>MAXSAL MINERAL 25KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+                <tr>
+                
+                   <td class="numero">
+                    <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">1015</td>
+                   <td>MAXSAL PROTEINADO 25KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+                <tr>
+                
+                   <td class="numero">
+                    <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">1016</td>
+                   <td>MAXSAL MAX30 25KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+                <tr>
+                
+                   <td class="numero">
+                    <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">1017</td>
+                   <td>MAXSAL ADE 25KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant"  type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+                <tr>
+                
+                   <td class="numero">
+                    <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">1018</td>
+                   <td>MAXSAL ALHO</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+                <tr>
+                
+                   <td class="numero">
+                    <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">1019</td>
+                   <td>MAXSAL CONFINAMENTO10 25KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">1326</td>
+                   <td>MAXSAL OVINOS 25KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6272</td>
+                   <td>MAXSAL CAPRINOS 25KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6330</td>
+                   <td>MANGMAX 500G</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6384</td>
+                   <td>PREMIX VITADE 500G</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6385</td>
+                   <td>MANGMAX ALHO 500G</td>
+                   <td>
+
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6423</td>
+                   <td>MAXSAL PROTEINADO GOLD 25KG</td>
+                   <td>
+
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6383</td>
+                   <td>MAXSAL REPRODUÇÃO 25KG</td>
+                   <td>
+
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6100</td>
+                   <td>MAXSAL LEITE</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6794</td>
+                   <td> MAXSAL BOVINO DE CORTE 40KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6895</td>
+                   <td>MAXSAL BOVINO LEITE 40KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6901</td>
+                   <td>MAXSAL BOVINO DIETA TOTAL 40KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6899</td>
+                   <td>MAXSAL AVES INICIAL 40KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+                 <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6998</td>
+                   <td>MAXSAL AVES CRESCIMENTO 40KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+                 <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6900</td>
+                   <td>MAXSAL AVES POSTURA 40KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+                 <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6897</td>
+                   <td>MAXSAL SUINO CRESCIMENTO 40KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+                 <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6288</td>
+                   <td>MAXSAL FARELO DE SOJA  <br> 
+                    <input type="radio" name="pagamento" id="isxmas" value="A"> <label for="isxmas">25KG</label>
+                    <input type="radio" name="pagamento" id="isxmas" value="A"> <label for="isxmas">50KG</label>
+
+
+
+
+                   </td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+
+                <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6980</td>
+                   <td>MAXSAL FARELO DE SOJA OLEOPLAN</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+
+
+                 <tr>
+                
+                   <td class="numero">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6217</td>
+                   <td> MAXSAL MILHO EM GRÃOS <br>
+                    <input type="radio" name="pagamento" id="isxmas" value="A"> <label for="isxmas">25KG</label>
+                    <input type="radio" name="pagamento" id="isxmas" value="A"> <label for="isxmas">50KG</label>
+
+
+                   </td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+
+                 <tr>
+                
+                   <td class="numero">
+
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6218</td>
+                   <td>MAXSAL MILHO MOIDO 50KG <br> <input type="radio" name="pagamento" id="isxmas" value="A"> <label for="isxmas">P1</label>
+                    <input type="radio" name="pagamento" id="isxmas" value="A"> <label for="isxmas">P2</label>
+                    <input type="radio" name="pagamento" id="isxmas" value="A"> <label for="isxmas">P3</label>
+                    <input type="radio" name="pagamento" id="isxmas" value="A"> <label for="isxmas">P4</label>
+
+
+
+
+                     </td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+
+                 <tr>
+                
+                   <td class="numero">
+
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="numero">6218</td>
+                   <td>MAXSAL MILHO MOIDO 25KG</td>
+                   <td>
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                   <td class="num">
+                     <label id="quant" for="inome"></label> 
+                     <input class="quant" type="number" name="quanr" id="iquant" minlength="0" maxlength="5" required placeholder="">
+                   </td>
+                      
+                </tr>
+
+
+
+                
+
+
+
             </thead>
 
-        </fieldset>
+    </table>
 
-        
-        <p id="ev">
-            <input type="submit" value="Enviar">
+
+     <p id="ev">
+            <input type="submit" value="SALVAR">
             <input type="reset" value="Limpar">
 
         </p>
 
-    </form>
+
+    
     
     
 </body>
